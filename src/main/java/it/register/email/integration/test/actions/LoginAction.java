@@ -30,14 +30,14 @@ public class LoginAction extends BaseAction {
         loginPage.fillPassword(userconfig.getPassword());
 
         loginPage.doLogin();
-						
+        
         inboxPage.waitForLoading(driver);
         Assert.assertTrue(inboxPage.isDisplayedCheck());
         inboxPage.logout();
-		
-		return data;
+        
+        return data;
 	}
-
+	
 	private void init(Context data){
 		driver = data.getWebDriver();
 		loginPage = PageFactory.initElements(data.getWebDriver(), LoginPage.class);
