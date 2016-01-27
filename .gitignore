@@ -1,3 +1,5 @@
+/.idea
+/email-integration-test.iml
 /target/
 /.settings/
 /.classpath
